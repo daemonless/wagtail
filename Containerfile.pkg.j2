@@ -1,0 +1,40 @@
+ARG BASE_VERSION=15.1
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+ARG PKG_NAME="www/py-wagtail"
+ARG PACKAGES="python3 www/py-wagtail www/py-gunicorn databases/py-psycopg www/py-whitenoise"
+
+LABEL org.opencontainers.image.title="Wagtail" \
+      org.opencontainers.image.description="Wagtail is an open source content management system built on Django, with a strong community and commercial support. It's focused on user experience, and offers precise control for designers and developers." \
+      org.opencontainers.image.source="https://github.com/daemonless/wagtail" \
+      org.opencontainers.image.url="https://wagtail.org/" \
+      org.opencontainers.image.licenses="BSD-3-Clause" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.category="Productivity" \
+      io.daemonless.port="8080" \
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.pkg-source="pkg" \
+      io.daemonless.packages="${PACKAGES}" \
+      io.daemonless.pkg-name="${PKG_NAME}"
+
+# Install wagtail + WSGI server + db driver
+RUN pkg update && \
+    pkg install -y ${PACKAGES} && \
+    mkdir -p /app && \
+    pkg query -e "%o == \"${PKG_NAME}\"" '%v' > /app/version && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Copy root filesystem
+COPY root/ /
+
+# Set permissions
+RUN chmod +x /etc/services.d/wagtail/run /healthz
+
+# Expose
+EXPOSE 8080
+
+# Volumes
+VOLUME /config
