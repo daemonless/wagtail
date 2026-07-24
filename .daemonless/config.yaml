@@ -4,6 +4,7 @@
 # Full reference: https://github.com/daemonless/dbuild
 
 build:
+  pkg_name: py312-wagtail
   variants:
     - tag: pkg
       containerfile: Containerfile.pkg
