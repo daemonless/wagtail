@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-01T14:22:27Z",
+  "generated": "2026-08-07T12:46:28Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "7.4.2",
       "arch": "amd64",
-      "generated": "2026-08-01T14:12:25Z",
+      "generated": "2026-08-07T12:42:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1056,7 +1056,7 @@
               "GPLv1+"
             ],
             "name": "perl5",
-            "version": "5.42.2"
+            "version": "5.42.3"
           },
           {
             "licenses": [
@@ -1934,7 +1934,7 @@
     "pkg-latest": {
       "app_version": "7.4.2",
       "arch": "amd64",
-      "generated": "2026-08-01T14:13:23Z",
+      "generated": "2026-08-07T12:42:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2366,7 +2366,7 @@
               "GPLv2+"
             ],
             "name": "hwdata",
-            "version": "0.409,1"
+            "version": "0.410,1"
           },
           {
             "licenses": [
@@ -2730,7 +2730,7 @@
               "BSD2CLAUSE"
             ],
             "name": "libudev-devd",
-            "version": "0.6.0"
+            "version": "0.7.0"
           },
           {
             "licenses": [
@@ -2906,7 +2906,7 @@
               "LGPL21"
             ],
             "name": "mpg123",
-            "version": "1.33.6"
+            "version": "1.33.7"
           },
           {
             "licenses": [
@@ -2992,7 +2992,7 @@
               "GPLv1+"
             ],
             "name": "perl5",
-            "version": "5.42.2"
+            "version": "5.42.3"
           },
           {
             "licenses": [
@@ -3125,7 +3125,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-django52",
-            "version": "5.2.16"
+            "version": "5.2.17"
           },
           {
             "licenses": [
@@ -3295,7 +3295,7 @@
               "MIT"
             ],
             "name": "py312-soupsieve",
-            "version": "2.8"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -3425,7 +3425,7 @@
               "NCSA"
             ],
             "name": "spirv-llvm-translator-llvm19",
-            "version": "19.1.20"
+            "version": "19.1.21"
           },
           {
             "licenses": [
@@ -3490,7 +3490,7 @@
               "APACHE20"
             ],
             "name": "vulkan-loader",
-            "version": "1.4.356"
+            "version": "1.4.357"
           },
           {
             "licenses": [
@@ -3642,7 +3642,7 @@
           {
             "name": "django",
             "purl": "",
-            "version": "5.2.16"
+            "version": "5.2.17"
           },
           {
             "name": "django-filter",
@@ -3802,7 +3802,7 @@
           {
             "name": "soupsieve",
             "purl": "",
-            "version": "2.8"
+            "version": "2.8.4"
           },
           {
             "name": "sqlite3",
