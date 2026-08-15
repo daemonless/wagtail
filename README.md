@@ -21,7 +21,7 @@ Wagtail is an open source content management system built on Django, with a stro
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
 | `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
-| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
 
 ## Prerequisites
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
@@ -83,7 +83,7 @@ services:
     name: wagtail
     options:
       - container: 'boot args:--pull'
-      - expose: '8080:8080 proto:tcp' \
+      - expose: '8080:8080 proto:tcp'
     oci:
       user: root
       environment:
