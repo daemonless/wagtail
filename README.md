@@ -49,8 +49,11 @@ services:
       - "/path/to/containers/wagtail:/config"
     ports:
       - "8080:8080"
-    restart: unless-stopped
+    # always (not unless-stopped) so FreeBSD's podman rc.d auto-starts it at boot
+    restart: always
 ```
+
+Save as `compose.yaml`, then run `podman-compose up -d`.
 
 ### AppJail Director
 **.env**:
@@ -113,6 +116,9 @@ ARG tag=pkg
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/wagtail:${tag}
 ```
+
+Save the files above, then run `appjail-director up`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
@@ -132,6 +138,8 @@ podman run -d --name wagtail \
   -v /path/to/containers/wagtail:/config \
   ghcr.io/daemonless/wagtail:latest
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
 
 ### AppJail
 
@@ -154,7 +162,50 @@ appjail oci run -Pd \
   -o fstab="/path/to/containers/wagtail /config <pseudofs>" \
   ghcr.io/daemonless/wagtail:latest wagtail
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
+### Bastille
+
+> [!WARNING]
+> Bastille's OCI support is **experimental**. It requires `buildah`, shares the host network stack (`inherit`), and persists image-declared volumes under `--data-path`.
+
+```yaml
+services:
+  wagtail:
+    image: "ghcr.io/daemonless/wagtail:latest"
+    container_name: wagtail
+    network_mode: host  # jail shares host networking
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - WAGTAIL_SUPERUSER_NAME=admin
+      - WAGTAIL_SUPERUSER_PASSWORD=changeme
+      - DATABASE_URL=
+      - SECRET_KEY=<SECRET_KEY>
+      - WAGTAIL_ALLOWED_HOSTS=*
+      - WAGTAIL_WORKERS=3
+```
+
+Save as `podman-compose.yml`, then run `bastille up`. Or via CLI:
+
+```bash
+bastille create -O \
+  --env PUID=1000 \
+  --env PGID=1000 \
+  --env TZ=UTC \
+  --env WAGTAIL_SUPERUSER_NAME=admin \
+  --env WAGTAIL_SUPERUSER_PASSWORD=changeme \
+  --env DATABASE_URL= \
+  --env SECRET_KEY=<SECRET_KEY> \
+  --env WAGTAIL_ALLOWED_HOSTS=* \
+  --env WAGTAIL_WORKERS=3 \
+  --data-path /path/to/containers/wagtail \
+  wagtail ghcr.io/daemonless/wagtail:latest inherit
+```
 
 ### Ansible
 
@@ -180,6 +231,8 @@ appjail oci run -Pd \
     volumes:
       - "/path/to/containers/wagtail:/config"
 ```
+
+Save as `wagtail-deploy.yaml`, then run `ansible-playbook wagtail-deploy.yaml`.
 
 Access at: `http://localhost:8080`
 
