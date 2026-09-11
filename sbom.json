@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-10T07:15:00Z",
+  "generated": "2026-09-11T07:02:11Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "7.4.2",
       "arch": "amd64",
-      "generated": "2026-09-10T07:10:56Z",
+      "generated": "2026-09-11T06:59:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1932,9 +1932,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "7.4.2_1",
+      "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-09-10T07:12:17Z",
+      "generated": "2026-09-11T06:59:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2658,7 +2658,7 @@
               "GPLv3+"
             ],
             "name": "libimagequant",
-            "version": "4.4.1_6"
+            "version": "4.4.1_7"
           },
           {
             "licenses": [
@@ -2708,7 +2708,7 @@
               "LGPL20"
             ],
             "name": "librsvg2-rust",
-            "version": "2.62.3_1"
+            "version": "2.62.3_2"
           },
           {
             "licenses": [
@@ -3024,6 +3024,13 @@
           },
           {
             "licenses": [
+              "MIT"
+            ],
+            "name": "py312-annotated-types",
+            "version": "0.8.0"
+          },
+          {
+            "licenses": [
               "ISCL"
             ],
             "name": "py312-anyascii",
@@ -3087,6 +3094,13 @@
           },
           {
             "licenses": [
+              "MIT"
+            ],
+            "name": "py312-django-ninja",
+            "version": "1.7.0"
+          },
+          {
+            "licenses": [
               "BSD3CLAUSE"
             ],
             "name": "py312-django-permissionedforms",
@@ -3139,7 +3153,7 @@
               "MIT"
             ],
             "name": "py312-draftjs-exporter",
-            "version": "5.2.0_1"
+            "version": "7.1.0"
           },
           {
             "licenses": [
@@ -3195,7 +3209,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-modelsearch",
-            "version": "1.3.1"
+            "version": "1.3.2"
           },
           {
             "licenses": [
@@ -3232,7 +3246,7 @@
               "MIT-CMU"
             ],
             "name": "py312-pillow",
-            "version": "11.3.0_2"
+            "version": "12.3.0"
           },
           {
             "licenses": [
@@ -3246,14 +3260,14 @@
               "LGPL3"
             ],
             "name": "py312-psycopg",
-            "version": "3.3.4"
+            "version": "3.3.5"
           },
           {
             "licenses": [
               "LGPL3"
             ],
             "name": "py312-psycopg-c",
-            "version": "3.3.4"
+            "version": "3.3.5"
           },
           {
             "licenses": [
@@ -3261,6 +3275,20 @@
             ],
             "name": "py312-psycopg-pool",
             "version": "3.3.1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "py312-pydantic-core",
+            "version": "2.46.5"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "py312-pydantic2",
+            "version": "2.13.5"
           },
           {
             "licenses": [
@@ -3313,6 +3341,13 @@
           },
           {
             "licenses": [
+              "MIT"
+            ],
+            "name": "py312-swapper",
+            "version": "1.5.0"
+          },
+          {
+            "licenses": [
               "BSD3CLAUSE"
             ],
             "name": "py312-telepath",
@@ -3336,6 +3371,13 @@
             "licenses": [
               "MIT"
             ],
+            "name": "py312-typing-inspection",
+            "version": "0.4.4"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
             "name": "py312-urllib3",
             "version": "2.7.0,1"
           },
@@ -3344,7 +3386,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-wagtail",
-            "version": "7.4.2_1"
+            "version": "8.0"
           },
           {
             "licenses": [
@@ -3610,6 +3652,11 @@
             "version": "1.12.0"
           },
           {
+            "name": "annotated-types",
+            "purl": "",
+            "version": "0.8.0"
+          },
+          {
             "name": "anyascii",
             "purl": "",
             "version": "0.3.3"
@@ -3655,6 +3702,11 @@
             "version": "6.5"
           },
           {
+            "name": "django-ninja",
+            "purl": "",
+            "version": "1.7.0"
+          },
+          {
             "name": "django-permissionedforms",
             "purl": "",
             "version": "0.1"
@@ -3685,9 +3737,9 @@
             "version": "3.18.0"
           },
           {
-            "name": "draftjs-exporter",
+            "name": "draftjs_exporter",
             "purl": "",
-            "version": "5.2.0"
+            "version": "7.1.0"
           },
           {
             "name": "et-xmlfile",
@@ -3732,7 +3784,7 @@
           {
             "name": "modelsearch",
             "purl": "",
-            "version": "1.3.1"
+            "version": "1.3.2"
           },
           {
             "name": "numpy",
@@ -3757,7 +3809,7 @@
           {
             "name": "pillow",
             "purl": "",
-            "version": "11.3.0"
+            "version": "12.3.0"
           },
           {
             "name": "pillow-heif",
@@ -3767,17 +3819,27 @@
           {
             "name": "psycopg",
             "purl": "",
-            "version": "3.3.4"
+            "version": "3.3.5"
           },
           {
             "name": "psycopg-c",
             "purl": "",
-            "version": "3.3.4"
+            "version": "3.3.5"
           },
           {
             "name": "psycopg-pool",
             "purl": "",
             "version": "3.3.1"
+          },
+          {
+            "name": "pydantic",
+            "purl": "",
+            "version": "2.13.5"
+          },
+          {
+            "name": "pydantic_core",
+            "purl": "",
+            "version": "2.46.5"
           },
           {
             "name": "pysocks",
@@ -3815,6 +3877,11 @@
             "version": "0.6.0"
           },
           {
+            "name": "swapper",
+            "purl": "",
+            "version": "1.5.0"
+          },
+          {
             "name": "telepath",
             "purl": "",
             "version": "0.3.1"
@@ -3823,6 +3890,11 @@
             "name": "tkinter",
             "purl": "",
             "version": "3.12.14"
+          },
+          {
+            "name": "typing-inspection",
+            "purl": "",
+            "version": "0.4.4"
           },
           {
             "name": "typing_extensions",
@@ -3837,7 +3909,7 @@
           {
             "name": "wagtail",
             "purl": "",
-            "version": "7.4.2"
+            "version": "8.0"
           },
           {
             "name": "webencodings",
@@ -3856,15 +3928,15 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 225,
+        "freebsd": 231,
         "go": 0,
         "java": 0,
         "node": 11,
         "php": 0,
-        "python": 49,
+        "python": 55,
         "ruby": 0,
         "rust": 0,
-        "total": 285
+        "total": 297
       }
     }
   }
