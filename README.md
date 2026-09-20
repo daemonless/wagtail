@@ -7,6 +7,7 @@ Source: dbuild templates
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/wagtail/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/wagtail/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/daemonless/wagtail?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/wagtail/commits)
+[![OCI Pulls](https://img.shields.io/docker/pulls/daemonless/wagtail?style=flat-square&label=OCI+Pulls&color=blue)](https://hub.docker.com/r/daemonless/wagtail)
 
 Wagtail is an open source content management system built on Django, with a strong community and commercial support. It's focused on user experience, and offers precise control for designers and developers.
 
