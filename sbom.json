@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-20T23:49:31Z",
+  "generated": "2026-09-29T20:30:57Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "7.4.2",
       "arch": "amd64",
-      "generated": "2026-09-20T23:40:18Z",
+      "generated": "2026-09-29T20:27:39Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -49,7 +49,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-clibs-lib32",
-            "version": "15.1p2"
+            "version": "15.1p4"
           },
           {
             "licenses": [
@@ -1948,7 +1948,7 @@
     "pkg-latest": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-09-20T23:39:36Z",
+      "generated": "2026-09-29T20:28:11Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1992,7 +1992,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-clibs-lib32",
-            "version": "15.1p2"
+            "version": "15.1p4"
           },
           {
             "licenses": [
@@ -2216,7 +2216,7 @@
               "BSD2CLAUSE"
             ],
             "name": "aom",
-            "version": "3.15.0"
+            "version": "3.15.1"
           },
           {
             "licenses": [
@@ -2665,7 +2665,7 @@
               "LGPL3+"
             ],
             "name": "libheif",
-            "version": "1.22.2_2"
+            "version": "1.22.2_3"
           },
           {
             "licenses": [
@@ -2963,7 +2963,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.15_1"
+            "version": "3.4.15_2"
           },
           {
             "licenses": [
@@ -2984,7 +2984,7 @@
               "BSD2CLAUSE"
             ],
             "name": "openjph",
-            "version": "0.31.0"
+            "version": "0.32.0"
           },
           {
             "licenses": [
@@ -2998,7 +2998,7 @@
               "BSD3CLAUSE"
             ],
             "name": "p11-kit",
-            "version": "0.26.5"
+            "version": "0.26.5_1"
           },
           {
             "licenses": [
@@ -3139,7 +3139,7 @@
               "MIT"
             ],
             "name": "py312-django-stubs-ext",
-            "version": "6.1.0"
+            "version": "6.1.1"
           },
           {
             "licenses": [
@@ -3216,7 +3216,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-idna",
-            "version": "3.19"
+            "version": "3.20"
           },
           {
             "licenses": [
@@ -3288,21 +3288,21 @@
               "LGPL3"
             ],
             "name": "py312-psycopg",
-            "version": "3.3.5"
+            "version": "3.3.6"
           },
           {
             "licenses": [
               "LGPL3"
             ],
             "name": "py312-psycopg-c",
-            "version": "3.3.5"
+            "version": "3.3.6"
           },
           {
             "licenses": [
               "LGPL3"
             ],
             "name": "py312-psycopg-pool",
-            "version": "3.3.1"
+            "version": "3.3.2"
           },
           {
             "licenses": [
@@ -3407,7 +3407,7 @@
               "MIT"
             ],
             "name": "py312-urllib3",
-            "version": "2.7.0,1"
+            "version": "2.8.0,1"
           },
           {
             "licenses": [
@@ -3446,14 +3446,14 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14"
+            "version": "3.12.14_1"
           },
           {
             "licenses": [
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -3602,7 +3602,7 @@
               "BSD2CLAUSE"
             ],
             "name": "xxhash",
-            "version": "0.8.3"
+            "version": "0.8.4"
           },
           {
             "licenses": [
@@ -3742,7 +3742,7 @@
           {
             "name": "django-stubs-ext",
             "purl": "",
-            "version": "6.1.0"
+            "version": "6.1.1"
           },
           {
             "name": "django-taggit",
@@ -3797,7 +3797,7 @@
           {
             "name": "idna",
             "purl": "",
-            "version": "3.19"
+            "version": "3.20"
           },
           {
             "name": "laces",
@@ -3847,17 +3847,17 @@
           {
             "name": "psycopg",
             "purl": "",
-            "version": "3.3.5"
+            "version": "3.3.6"
           },
           {
             "name": "psycopg-c",
             "purl": "",
-            "version": "3.3.5"
+            "version": "3.3.6"
           },
           {
             "name": "psycopg-pool",
             "purl": "",
-            "version": "3.3.1"
+            "version": "3.3.2"
           },
           {
             "name": "pydantic",
@@ -3932,7 +3932,7 @@
           {
             "name": "urllib3",
             "purl": "",
-            "version": "2.7.0"
+            "version": "2.8.0"
           },
           {
             "name": "wagtail",
