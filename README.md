@@ -22,7 +22,7 @@ Wagtail is an open source content management system built on Django, with a stro
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
 | `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
-| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `latest` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
 
 ## Prerequisites
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
@@ -34,7 +34,7 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   wagtail:
-    image: "ghcr.io/daemonless/wagtail:latest"
+    image: "ghcr.io/daemonless/wagtail:pkg"
     container_name: wagtail
     environment:
       - PUID=1000  # User ID for the application process
@@ -47,7 +47,7 @@ services:
       - WAGTAIL_ALLOWED_HOSTS=*  # Comma-separated Django ALLOWED_HOSTS.
       - WAGTAIL_WORKERS=3  # Number of gunicorn workers.
     volumes:
-      - "/path/to/containers/wagtail:/config"
+      - "/containers/wagtail:/config"
     ports:
       - "8080:8080"
     # always (not unless-stopped) so FreeBSD's podman rc.d auto-starts it at boot
@@ -104,7 +104,7 @@ services:
       - wagtail: /config
 volumes:
   wagtail:
-    device: '/path/to/containers/wagtail'
+    device: '/containers/wagtail'
 ```
 
 **Makejail**:
@@ -127,57 +127,6 @@ Save the files above, then run `appjail-director up`.
 >
 > To avoid exposing ports, just remove the `expose` option in your `appjail-director.yml` or from your command-line arguments.
 
-### Podman CLI
-
-```bash
-podman run -d --name wagtail \
-  -p 8080:8080 \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=UTC \
-  -e WAGTAIL_SUPERUSER_NAME=admin \
-  -e WAGTAIL_SUPERUSER_PASSWORD=changeme \
-  -e DATABASE_URL= \
-  -e SECRET_KEY=<SECRET_KEY> \
-  -e WAGTAIL_ALLOWED_HOSTS=* \
-  -e WAGTAIL_WORKERS=3 \
-  -v /path/to/containers/wagtail:/config \
-  ghcr.io/daemonless/wagtail:latest
-```
-
-Save as `run.sh`, then run `sh run.sh`.
-
-### AppJail
-
-
-```bash
-appjail oci run -Pd \
-  -o overwrite=force \
-  -o container="args:--pull" \
-  -o virtualnet=":<random> default" \
-  -o nat \
-  -o expose="8080:8080 proto:tcp" \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=UTC \
-  -e WAGTAIL_SUPERUSER_NAME=admin \
-  -e WAGTAIL_SUPERUSER_PASSWORD=changeme \
-  -e DATABASE_URL= \
-  -e SECRET_KEY=<SECRET_KEY> \
-  -e WAGTAIL_ALLOWED_HOSTS=* \
-  -e WAGTAIL_WORKERS=3 \
-  -o fstab="/path/to/containers/wagtail /config <pseudofs>" \
-  ghcr.io/daemonless/wagtail:latest wagtail
-```
-
-Save the files above, then run `sh run.sh`.
-
-
-> [!WARNING]
-> Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the jail's IPv4 address or hostname assigned by the virtual network.
->
-> To avoid exposing ports, just remove the `expose` option in your `appjail-director.yml` or from your command-line arguments.
-
 ### Bastille
 
 > [!WARNING]
@@ -187,7 +136,7 @@ Save the files above, then run `sh run.sh`.
 services:
   wagtail:
     name: wagtail
-    image: "ghcr.io/daemonless/wagtail:latest"
+    image: "ghcr.io/daemonless/wagtail:pkg"
     network:
       - mode: host
     environment:
@@ -201,52 +150,10 @@ services:
       - WAGTAIL_ALLOWED_HOSTS=*
       - WAGTAIL_WORKERS=3
     volumes:
-      - "/path/to/containers/wagtail:/config"
+      - "/containers/wagtail:/config"
 ```
 
-Save as `bastille-compose.yml`, then run `bastille up`. Or via CLI:
-
-```bash
-bastille create -O \
-  --env PUID=1000 \
-  --env PGID=1000 \
-  --env TZ=UTC \
-  --env WAGTAIL_SUPERUSER_NAME=admin \
-  --env WAGTAIL_SUPERUSER_PASSWORD=changeme \
-  --env DATABASE_URL= \
-  --env SECRET_KEY=<SECRET_KEY> \
-  --env WAGTAIL_ALLOWED_HOSTS=* \
-  --env WAGTAIL_WORKERS=3 \
-  --volume /path/to/containers/wagtail /config \
-  wagtail ghcr.io/daemonless/wagtail:latest inherit
-```
-
-### Ansible
-
-```yaml
-- name: Deploy wagtail
-  containers.podman.podman_container:
-    name: wagtail
-    image: "ghcr.io/daemonless/wagtail:latest"
-    state: started
-    restart_policy: always
-    env:
-      PUID: "1000"
-      PGID: "1000"
-      TZ: "UTC"
-      WAGTAIL_SUPERUSER_NAME: "admin"
-      WAGTAIL_SUPERUSER_PASSWORD: "changeme"
-      DATABASE_URL: ""
-      SECRET_KEY: "<SECRET_KEY>"
-      WAGTAIL_ALLOWED_HOSTS: "*"
-      WAGTAIL_WORKERS: "3"
-    ports:
-      - "8080:8080"
-    volumes:
-      - "/path/to/containers/wagtail:/config"
-```
-
-Save as `wagtail-deploy.yaml`, then run `ansible-playbook wagtail-deploy.yaml`.
+Save as `bastille-compose.yml`, then run `bastille up`.
 
 Access at: `http://localhost:8080`
 
