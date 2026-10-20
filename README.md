@@ -42,8 +42,8 @@ services:
       - TZ=UTC  # Timezone for the container
       - WAGTAIL_SUPERUSER_NAME=admin  # If set with WAGTAIL_SUPERUSER_PASSWORD, creates an admin superuser on start.
       - WAGTAIL_SUPERUSER_PASSWORD=changeme  # Password for the admin superuser (with WAGTAIL_SUPERUSER_NAME).
-      - DATABASE_URL=  # Use Postgres instead of the default SQLite, e.g. postgres://user:pass@host:5432/db. Unset = SQLite in /config.
-      - SECRET_KEY=<SECRET_KEY>  # Django SECRET_KEY. Auto-generated and persisted to /config/.secret_key if unset.
+      # - DATABASE_URL=  # Use Postgres instead of the default SQLite, e.g. postgres://user:pass@host:5432/db. Unset = SQLite in /config.
+      # - SECRET_KEY=  # Django SECRET_KEY. Auto-generated and persisted to /config/.secret_key if unset.
       - WAGTAIL_ALLOWED_HOSTS=*  # Comma-separated Django ALLOWED_HOSTS.
       - WAGTAIL_WORKERS=3  # Number of gunicorn workers.
     volumes:
@@ -68,8 +68,6 @@ PGID=1000
 TZ=UTC
 WAGTAIL_SUPERUSER_NAME=admin
 WAGTAIL_SUPERUSER_PASSWORD=changeme
-DATABASE_URL=
-SECRET_KEY=<SECRET_KEY>
 WAGTAIL_ALLOWED_HOSTS=*
 WAGTAIL_WORKERS=3
 ```
@@ -96,8 +94,6 @@ services:
         - TZ: !ENV '${TZ}'
         - WAGTAIL_SUPERUSER_NAME: !ENV '${WAGTAIL_SUPERUSER_NAME}'
         - WAGTAIL_SUPERUSER_PASSWORD: !ENV '${WAGTAIL_SUPERUSER_PASSWORD}'
-        - DATABASE_URL: !ENV '${DATABASE_URL}'
-        - SECRET_KEY: !ENV '${SECRET_KEY}'
         - WAGTAIL_ALLOWED_HOSTS: !ENV '${WAGTAIL_ALLOWED_HOSTS}'
         - WAGTAIL_WORKERS: !ENV '${WAGTAIL_WORKERS}'
     volumes:
@@ -145,8 +141,6 @@ services:
       - TZ=UTC
       - WAGTAIL_SUPERUSER_NAME=admin
       - WAGTAIL_SUPERUSER_PASSWORD=changeme
-      - DATABASE_URL=
-      - SECRET_KEY=<SECRET_KEY>
       - WAGTAIL_ALLOWED_HOSTS=*
       - WAGTAIL_WORKERS=3
     volumes:

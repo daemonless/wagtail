@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-10T23:53:58Z",
+  "generated": "2026-10-20T22:22:14Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-10-10T23:51:38Z",
+      "generated": "2026-10-20T22:18:24Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -203,7 +203,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -252,7 +252,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -309,7 +309,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -1224,7 +1224,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-django52",
-            "version": "5.2.17"
+            "version": "5.2.18"
           },
           {
             "licenses": [
@@ -1415,7 +1415,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.14_10"
+            "version": "3.12.15_10"
           },
           {
             "licenses": [
@@ -1443,7 +1443,7 @@
               "PSFL"
             ],
             "name": "py312-tkinter",
-            "version": "3.12.14_11"
+            "version": "3.12.15_11"
           },
           {
             "licenses": [
@@ -1503,7 +1503,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -1774,7 +1774,7 @@
           {
             "name": "django",
             "purl": "",
-            "version": "5.2.17"
+            "version": "5.2.18"
           },
           {
             "name": "django-filter",
@@ -1954,7 +1954,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "sqlparse",
@@ -1974,7 +1974,7 @@
           {
             "name": "tkinter",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "typing-inspection",
@@ -2027,7 +2027,7 @@
     "pkg-latest": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-10-10T23:50:24Z",
+      "generated": "2026-10-20T22:19:07Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2225,7 +2225,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -2274,7 +2274,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -2331,7 +2331,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -2360,7 +2360,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.5"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -2368,14 +2368,14 @@
               "LGPL3+"
             ],
             "name": "ffmpeg",
-            "version": "9.0.2_1,1"
+            "version": "9.0.2_2,1"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "fontconfig",
-            "version": "2.17.1,1"
+            "version": "2.18.3,1"
           },
           {
             "licenses": [
@@ -2451,14 +2451,14 @@
               "GPLv2"
             ],
             "name": "graphite2",
-            "version": "1.3.15"
+            "version": "1.3.15_1"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "harfbuzz",
-            "version": "14.2.1"
+            "version": "14.5.1"
           },
           {
             "licenses": [
@@ -2473,7 +2473,7 @@
               "GPLv2+"
             ],
             "name": "hwdata",
-            "version": "0.411,1"
+            "version": "0.412,1"
           },
           {
             "licenses": [
@@ -2744,7 +2744,7 @@
               "LGPL3+"
             ],
             "name": "libheif",
-            "version": "1.22.2_4"
+            "version": "1.23.6"
           },
           {
             "licenses": [
@@ -2765,7 +2765,7 @@
               "GPLv3+"
             ],
             "name": "libimagequant",
-            "version": "4.4.1_7"
+            "version": "4.4.1_8"
           },
           {
             "licenses": [
@@ -2815,7 +2815,7 @@
               "LGPL20"
             ],
             "name": "librsvg2-rust",
-            "version": "2.62.3_2"
+            "version": "2.62.3_3"
           },
           {
             "licenses": [
@@ -2952,7 +2952,7 @@
               "BSD3CLAUSE"
             ],
             "name": "libyuv",
-            "version": "0.0.1903"
+            "version": "0.0.1973"
           },
           {
             "licenses": [
@@ -3049,7 +3049,7 @@
               "BSD2CLAUSE"
             ],
             "name": "openh264",
-            "version": "2.6.0,2"
+            "version": "2.6.0_1,2"
           },
           {
             "licenses": [
@@ -3120,7 +3120,7 @@
               "Libpng"
             ],
             "name": "png",
-            "version": "1.6.58"
+            "version": "1.6.59_1"
           },
           {
             "licenses": [
@@ -3388,7 +3388,7 @@
               "MIT"
             ],
             "name": "py312-pydantic-core",
-            "version": "2.46.5"
+            "version": "2.46.5_1"
           },
           {
             "licenses": [
@@ -3437,7 +3437,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.14_10"
+            "version": "3.12.15_10"
           },
           {
             "licenses": [
@@ -3465,7 +3465,7 @@
               "PSFL"
             ],
             "name": "py312-tkinter",
-            "version": "3.12.14_11"
+            "version": "3.12.15_11"
           },
           {
             "licenses": [
@@ -3525,7 +3525,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -3660,7 +3660,7 @@
               "GPLv2+"
             ],
             "name": "x265",
-            "version": "4.2"
+            "version": "4.3"
           },
           {
             "licenses": [
@@ -3674,7 +3674,7 @@
               "MIT"
             ],
             "name": "xorgproto",
-            "version": "2025.1"
+            "version": "2026.1"
           },
           {
             "licenses": [
@@ -3976,7 +3976,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "sqlparse",
@@ -3996,7 +3996,7 @@
           {
             "name": "tkinter",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "typing-inspection",
