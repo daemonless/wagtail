@@ -1,5 +1,5 @@
 #!/bin/sh
-# Wagtail (Django CMS) service.
+# Wagtail (Django CMS); /init has already dropped to bsd.
 #
 # Wagtail is a framework, not a runnable app: on first start we scaffold a fresh
 # site into the /config volume (so the user owns/edits it), then serve it with
@@ -25,16 +25,11 @@ else
     WAGTAIL="$PY -m wagtail.bin.wagtail"
 fi
 
-mkdir -p /config
-chown bsd:bsd /config
-
 # --- First run: scaffold a Wagtail project into the volume ---------------------
 if [ ! -f "${PROJECT_DIR}/manage.py" ]; then
     echo "[wagtail] No project at ${PROJECT_DIR} — bootstrapping a new site..."
     mkdir -p "${PROJECT_DIR}"
-    chown bsd:bsd "${PROJECT_DIR}"
-    s6-setuidgid bsd $WAGTAIL start "${SITE_NAME}" "${PROJECT_DIR}"
-    chown -R bsd:bsd "${PROJECT_DIR}"
+    $WAGTAIL start "${SITE_NAME}" "${PROJECT_DIR}"
 fi
 
 cd "${PROJECT_DIR}"
@@ -43,7 +38,6 @@ cd "${PROJECT_DIR}"
 if [ -z "$SECRET_KEY" ]; then
     if [ ! -f /config/.secret_key ]; then
         $PY -c 'import secrets; print(secrets.token_urlsafe(50))' > /config/.secret_key
-        chown bsd:bsd /config/.secret_key
         chmod 600 /config/.secret_key
     fi
     SECRET_KEY="$(cat /config/.secret_key)"
@@ -81,7 +75,6 @@ if _os.environ.get("DATABASE_URL"):
         "CONN_MAX_AGE": 600,
     }}
 PYEOF
-chown bsd:bsd "${PROJECT_DIR}/${SITE_NAME}/settings/daemonless.py"
 
 export DJANGO_SETTINGS_MODULE="${SITE_NAME}.settings.daemonless"
 export PYTHONUNBUFFERED=1
@@ -105,13 +98,13 @@ esac
 
 # --- Migrate + collect static --------------------------------------------------
 echo "[wagtail] Applying migrations..."
-s6-setuidgid bsd $PY manage.py migrate --noinput
-s6-setuidgid bsd $PY manage.py collectstatic --noinput -v 0
+$PY manage.py migrate --noinput
+$PY manage.py collectstatic --noinput -v 0
 
 # --- Optional admin superuser from env -----------------------------------------
 if [ -n "$WAGTAIL_SUPERUSER_NAME" ] && [ -n "$WAGTAIL_SUPERUSER_PASSWORD" ]; then
     echo "[wagtail] Ensuring superuser '${WAGTAIL_SUPERUSER_NAME}'..."
-    s6-setuidgid bsd env DJANGO_SUPERUSER_PASSWORD="$WAGTAIL_SUPERUSER_PASSWORD" \
+    env DJANGO_SUPERUSER_PASSWORD="$WAGTAIL_SUPERUSER_PASSWORD" \
         $PY manage.py createsuperuser --noinput \
         --username "$WAGTAIL_SUPERUSER_NAME" \
         --email "${WAGTAIL_SUPERUSER_EMAIL:-admin@example.com}" 2>/dev/null || true
@@ -119,6 +112,6 @@ fi
 
 # --- Serve ---------------------------------------------------------------------
 echo "[wagtail] Starting gunicorn on :${PORT}..."
-exec s6-setuidgid bsd gunicorn "${SITE_NAME}.wsgi:application" \
+exec gunicorn "${SITE_NAME}.wsgi:application" \
     --bind "0.0.0.0:${PORT}" \
     --workers "${WAGTAIL_WORKERS:-3}"
