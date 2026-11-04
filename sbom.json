@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-30T22:59:33Z",
+  "generated": "2026-11-04T15:24:40Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-10-30T22:56:38Z",
+      "generated": "2026-11-04T15:20:51Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -273,7 +273,7 @@
               "BSD2CLAUSE"
             ],
             "name": "aom",
-            "version": "3.15.1"
+            "version": "3.15.2"
           },
           {
             "licenses": [
@@ -331,7 +331,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -715,7 +715,7 @@
               "LGPL3+"
             ],
             "name": "libheif",
-            "version": "1.22.2_3"
+            "version": "1.23.6"
           },
           {
             "licenses": [
@@ -1224,7 +1224,7 @@
               "BSD2CLAUSE"
             ],
             "name": "py312-djangorestframework",
-            "version": "3.18.1,1"
+            "version": "3.18.3,1"
           },
           {
             "licenses": [
@@ -1324,7 +1324,7 @@
               "MIT-CMU"
             ],
             "name": "py312-pillow",
-            "version": "12.3.0"
+            "version": "13.0.0"
           },
           {
             "licenses": [
@@ -1545,7 +1545,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -1798,7 +1798,7 @@
           {
             "name": "djangorestframework",
             "purl": "",
-            "version": "3.18.1"
+            "version": "3.18.3"
           },
           {
             "name": "draftjs_exporter",
@@ -1873,7 +1873,7 @@
           {
             "name": "pillow",
             "purl": "",
-            "version": "12.3.0"
+            "version": "13.0.0"
           },
           {
             "name": "pillow-heif",
@@ -2006,7 +2006,7 @@
     "pkg-latest": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-10-30T22:55:31Z",
+      "generated": "2026-11-04T15:21:50Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2362,7 +2362,7 @@
               "LGPL21"
             ],
             "name": "fribidi",
-            "version": "1.0.17"
+            "version": "1.0.18"
           },
           {
             "licenses": [
@@ -2430,7 +2430,7 @@
               "MIT"
             ],
             "name": "harfbuzz",
-            "version": "14.6.0"
+            "version": "15.0.0"
           },
           {
             "licenses": [
@@ -2787,7 +2787,7 @@
               "LGPL20"
             ],
             "name": "librsvg2-rust",
-            "version": "2.62.3_3"
+            "version": "2.63.4"
           },
           {
             "licenses": [
@@ -3056,7 +3056,7 @@
               "LGPL21+"
             ],
             "name": "pango",
-            "version": "1.57.1"
+            "version": "1.58.2"
           },
           {
             "licenses": [
@@ -3120,7 +3120,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-asgiref",
-            "version": "3.12.1"
+            "version": "3.13.0"
           },
           {
             "licenses": [
@@ -3162,7 +3162,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-django-filter",
-            "version": "26.1"
+            "version": "26.2"
           },
           {
             "licenses": [
@@ -3225,7 +3225,7 @@
               "BSD2CLAUSE"
             ],
             "name": "py312-djangorestframework",
-            "version": "3.18.1,1"
+            "version": "3.18.3,1"
           },
           {
             "licenses": [
@@ -3325,7 +3325,7 @@
               "MIT-CMU"
             ],
             "name": "py312-pillow",
-            "version": "12.3.0"
+            "version": "13.0.0"
           },
           {
             "licenses": [
@@ -3353,7 +3353,7 @@
               "LGPL3"
             ],
             "name": "py312-psycopg-pool",
-            "version": "3.3.2"
+            "version": "3.3.3"
           },
           {
             "licenses": [
@@ -3546,7 +3546,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -3625,7 +3625,7 @@
               "MIT"
             ],
             "name": "xkeyboard-config",
-            "version": "2.48"
+            "version": "2.49"
           },
           {
             "licenses": [
@@ -3729,7 +3729,7 @@
           {
             "name": "asgiref",
             "purl": "",
-            "version": "3.12.1"
+            "version": "3.13.0"
           },
           {
             "name": "beautifulsoup4",
@@ -3759,7 +3759,7 @@
           {
             "name": "django-filter",
             "purl": "",
-            "version": "26.1"
+            "version": "26.2"
           },
           {
             "name": "django-modelcluster",
@@ -3799,7 +3799,7 @@
           {
             "name": "djangorestframework",
             "purl": "",
-            "version": "3.18.1"
+            "version": "3.18.3"
           },
           {
             "name": "draftjs_exporter",
@@ -3874,7 +3874,7 @@
           {
             "name": "pillow",
             "purl": "",
-            "version": "12.3.0"
+            "version": "13.0.0"
           },
           {
             "name": "pillow-heif",
@@ -3894,7 +3894,7 @@
           {
             "name": "psycopg-pool",
             "purl": "",
-            "version": "3.3.2"
+            "version": "3.3.3"
           },
           {
             "name": "pydantic",
