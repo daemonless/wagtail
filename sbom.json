@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T15:24:40Z",
+  "generated": "2026-11-11T19:52:54Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-11-04T15:20:51Z",
+      "generated": "2026-11-11T19:50:08Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -273,7 +273,7 @@
               "BSD2CLAUSE"
             ],
             "name": "aom",
-            "version": "3.15.2"
+            "version": "3.15.3"
           },
           {
             "licenses": [
@@ -1013,7 +1013,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.16"
+            "version": "3.4.17"
           },
           {
             "licenses": [
@@ -1217,7 +1217,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-django52",
-            "version": "5.2.18"
+            "version": "5.2.19"
           },
           {
             "licenses": [
@@ -1753,7 +1753,7 @@
           {
             "name": "django",
             "purl": "",
-            "version": "5.2.18"
+            "version": "5.2.19"
           },
           {
             "name": "django-filter",
@@ -2006,7 +2006,7 @@
     "pkg-latest": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-11-04T15:21:50Z",
+      "generated": "2026-11-11T19:49:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2274,7 +2274,7 @@
               "BSD2CLAUSE"
             ],
             "name": "aom",
-            "version": "3.15.2"
+            "version": "3.15.3"
           },
           {
             "licenses": [
@@ -2285,11 +2285,11 @@
           },
           {
             "licenses": [
-              "LGPL3",
-              "GPLv3"
+              "GPLv3",
+              "LGPL3"
             ],
             "name": "binutils",
-            "version": "2.44,1"
+            "version": "2.44_1,1"
           },
           {
             "licenses": [
@@ -2332,12 +2332,12 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.9.0"
+            "version": "2.10.0"
           },
           {
             "licenses": [
-              "GPLv3+",
-              "LGPL3+"
+              "LGPL3+",
+              "GPLv3+"
             ],
             "name": "ffmpeg",
             "version": "9.0.2_3,1"
@@ -2381,8 +2381,8 @@
           },
           {
             "licenses": [
-              "GPLv3+",
-              "LGPL21+"
+              "LGPL21+",
+              "GPLv3+"
             ],
             "name": "gettext-runtime",
             "version": "1.0_1"
@@ -2410,8 +2410,8 @@
           },
           {
             "licenses": [
-              "GPLv3+",
-              "LGPL21+"
+              "LGPL21+",
+              "GPLv3+"
             ],
             "name": "gnutls",
             "version": "3.8.13"
@@ -2445,7 +2445,7 @@
               "GPLv2+"
             ],
             "name": "hwdata",
-            "version": "0.412,1"
+            "version": "0.413,1"
           },
           {
             "licenses": [
@@ -2791,8 +2791,8 @@
           },
           {
             "licenses": [
-              "LGPL21+",
-              "GPLv3"
+              "GPLv3",
+              "LGPL21+"
             ],
             "name": "libtasn1",
             "version": "4.21.0"
@@ -2936,7 +2936,7 @@
               "REGEX"
             ],
             "name": "llvm19",
-            "version": "19.1.7_4"
+            "version": "19.1.7_5"
           },
           {
             "licenses": [
@@ -3014,7 +3014,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.16"
+            "version": "3.4.17"
           },
           {
             "licenses": [
@@ -3085,7 +3085,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -3218,7 +3218,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-django52",
-            "version": "5.2.18"
+            "version": "5.2.19"
           },
           {
             "licenses": [
@@ -3532,7 +3532,7 @@
               "NCSA"
             ],
             "name": "spirv-llvm-translator-llvm19",
-            "version": "19.1.23"
+            "version": "19.1.24"
           },
           {
             "licenses": [
@@ -3562,7 +3562,7 @@
               "BSD3CLAUSE"
             ],
             "name": "svt-av1",
-            "version": "4.2.0"
+            "version": "4.3.0"
           },
           {
             "licenses": [
@@ -3597,7 +3597,7 @@
               "APACHE20"
             ],
             "name": "vulkan-loader",
-            "version": "1.4.365"
+            "version": "1.4.368"
           },
           {
             "licenses": [
@@ -3643,8 +3643,8 @@
           },
           {
             "licenses": [
-              "GPLv2",
-              "BSD3CLAUSE"
+              "BSD3CLAUSE",
+              "GPLv2"
             ],
             "name": "zstd",
             "version": "1.5.7_2"
@@ -3754,7 +3754,7 @@
           {
             "name": "django",
             "purl": "",
-            "version": "5.2.18"
+            "version": "5.2.19"
           },
           {
             "name": "django-filter",
