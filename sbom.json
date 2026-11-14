@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-11T19:52:54Z",
+  "generated": "2026-11-14T22:50:04Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
       "app_version": "8.0",
       "arch": "amd64",
-      "generated": "2026-11-11T19:50:08Z",
+      "generated": "2026-11-14T22:47:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1013,7 +1013,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.17"
+            "version": "3.4.18"
           },
           {
             "licenses": [
@@ -1140,7 +1140,7 @@
               "MPL20"
             ],
             "name": "py312-certifi",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "licenses": [
@@ -1408,7 +1408,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.15_10"
+            "version": "3.12.16_10"
           },
           {
             "licenses": [
@@ -1436,7 +1436,7 @@
               "PSFL"
             ],
             "name": "py312-tkinter",
-            "version": "3.12.15_11"
+            "version": "3.12.16_11"
           },
           {
             "licenses": [
@@ -1496,7 +1496,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "licenses": [
@@ -1738,7 +1738,7 @@
           {
             "name": "certifi",
             "purl": "",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "name": "charset-normalizer",
@@ -1933,7 +1933,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "name": "sqlparse",
@@ -1953,7 +1953,7 @@
           {
             "name": "tkinter",
             "purl": "",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "name": "typing-inspection",
@@ -2004,9 +2004,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "8.0",
+      "app_version": "8.0.1",
       "arch": "amd64",
-      "generated": "2026-11-11T19:49:09Z",
+      "generated": "2026-11-14T22:46:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2475,7 +2475,7 @@
               "ZLIB"
             ],
             "name": "jpeg-turbo",
-            "version": "3.1.4.1"
+            "version": "3.2.1"
           },
           {
             "licenses": [
@@ -2496,14 +2496,14 @@
               "MIT"
             ],
             "name": "lcms2",
-            "version": "2.19.1"
+            "version": "2.20"
           },
           {
             "licenses": [
               "APACHE20"
             ],
             "name": "lerc",
-            "version": "4.2.0"
+            "version": "4.3.0"
           },
           {
             "licenses": [
@@ -2744,7 +2744,7 @@
               "BSD3CLAUSE"
             ],
             "name": "libjxl",
-            "version": "0.12.0"
+            "version": "0.12.0_1"
           },
           {
             "licenses": [
@@ -3014,7 +3014,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.17"
+            "version": "3.4.18"
           },
           {
             "licenses": [
@@ -3141,14 +3141,14 @@
               "MPL20"
             ],
             "name": "py312-certifi",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "py312-charset-normalizer",
-            "version": "3.5.1"
+            "version": "3.5.2"
           },
           {
             "licenses": [
@@ -3176,7 +3176,7 @@
               "MIT"
             ],
             "name": "py312-django-ninja",
-            "version": "1.7.1"
+            "version": "1.7.3"
           },
           {
             "licenses": [
@@ -3190,7 +3190,7 @@
               "MIT"
             ],
             "name": "py312-django-stubs-ext",
-            "version": "6.1.1"
+            "version": "6.1.2"
           },
           {
             "licenses": [
@@ -3232,7 +3232,7 @@
               "MIT"
             ],
             "name": "py312-draftjs-exporter",
-            "version": "7.1.0"
+            "version": "7.3.1"
           },
           {
             "licenses": [
@@ -3332,7 +3332,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-pillow-heif",
-            "version": "1.4.0"
+            "version": "1.8.1"
           },
           {
             "licenses": [
@@ -3360,14 +3360,14 @@
               "MIT"
             ],
             "name": "py312-pydantic-core",
-            "version": "2.46.5_1"
+            "version": "2.50.2"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "py312-pydantic2",
-            "version": "2.13.5"
+            "version": "2.14.2"
           },
           {
             "licenses": [
@@ -3409,7 +3409,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.15_10"
+            "version": "3.12.16_10"
           },
           {
             "licenses": [
@@ -3437,7 +3437,7 @@
               "PSFL"
             ],
             "name": "py312-tkinter",
-            "version": "3.12.15_11"
+            "version": "3.12.16_11"
           },
           {
             "licenses": [
@@ -3465,7 +3465,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-wagtail",
-            "version": "8.0"
+            "version": "8.0.1"
           },
           {
             "licenses": [
@@ -3497,7 +3497,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "licenses": [
@@ -3739,12 +3739,12 @@
           {
             "name": "certifi",
             "purl": "",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "name": "charset-normalizer",
             "purl": "",
-            "version": "3.5.1"
+            "version": "3.5.2"
           },
           {
             "name": "defusedxml",
@@ -3769,7 +3769,7 @@
           {
             "name": "django-ninja",
             "purl": "",
-            "version": "1.7.1"
+            "version": "1.7.3"
           },
           {
             "name": "django-permissionedforms",
@@ -3779,7 +3779,7 @@
           {
             "name": "django-stubs-ext",
             "purl": "",
-            "version": "6.1.1"
+            "version": "6.1.2"
           },
           {
             "name": "django-taggit",
@@ -3804,7 +3804,7 @@
           {
             "name": "draftjs_exporter",
             "purl": "",
-            "version": "7.1.0"
+            "version": "7.3.1"
           },
           {
             "name": "et-xmlfile",
@@ -3879,7 +3879,7 @@
           {
             "name": "pillow-heif",
             "purl": "",
-            "version": "1.4.0"
+            "version": "1.8.1"
           },
           {
             "name": "psycopg",
@@ -3899,12 +3899,12 @@
           {
             "name": "pydantic",
             "purl": "",
-            "version": "2.13.5"
+            "version": "2.14.2"
           },
           {
             "name": "pydantic_core",
             "purl": "",
-            "version": "2.46.5"
+            "version": "2.50.2"
           },
           {
             "name": "pysocks",
@@ -3934,7 +3934,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "name": "sqlparse",
@@ -3954,7 +3954,7 @@
           {
             "name": "tkinter",
             "purl": "",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "name": "typing-inspection",
@@ -3974,7 +3974,7 @@
           {
             "name": "wagtail",
             "purl": "",
-            "version": "8.0"
+            "version": "8.0.1"
           },
           {
             "name": "webencodings",
