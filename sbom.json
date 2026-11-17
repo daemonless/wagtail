@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T22:50:04Z",
+  "generated": "2026-11-17T23:50:23Z",
   "image": "wagtail",
   "tags": {
     "pkg": {
@@ -2004,9 +2004,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "8.0.1",
+      "app_version": "8.1",
       "arch": "amd64",
-      "generated": "2026-11-14T22:46:15Z",
+      "generated": "2026-11-17T23:48:06Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2716,7 +2716,7 @@
               "LGPL3+"
             ],
             "name": "libheif",
-            "version": "1.23.6"
+            "version": "1.23.6_1"
           },
           {
             "licenses": [
@@ -2752,7 +2752,7 @@
               "GPLv2"
             ],
             "name": "liblz4",
-            "version": "1.10.0_2,1"
+            "version": "1.11.1,1"
           },
           {
             "licenses": [
@@ -3014,7 +3014,7 @@
               "BSD3CLAUSE"
             ],
             "name": "openexr",
-            "version": "3.4.18"
+            "version": "3.4.18_1"
           },
           {
             "licenses": [
@@ -3035,7 +3035,7 @@
               "BSD2CLAUSE"
             ],
             "name": "openjph",
-            "version": "0.32.0"
+            "version": "0.33.0"
           },
           {
             "licenses": [
@@ -3049,7 +3049,7 @@
               "BSD3CLAUSE"
             ],
             "name": "p11-kit",
-            "version": "0.26.5_1"
+            "version": "0.26.6"
           },
           {
             "licenses": [
@@ -3085,7 +3085,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.9.0"
+            "version": "2.9.2"
           },
           {
             "licenses": [
@@ -3099,7 +3099,7 @@
               "PostgreSQL"
             ],
             "name": "postgresql18-client",
-            "version": "18.6"
+            "version": "18.7"
           },
           {
             "licenses": [
@@ -3176,7 +3176,7 @@
               "MIT"
             ],
             "name": "py312-django-ninja",
-            "version": "1.7.3"
+            "version": "1.8.0"
           },
           {
             "licenses": [
@@ -3253,7 +3253,7 @@
               "MIT"
             ],
             "name": "py312-gunicorn",
-            "version": "26.2.0"
+            "version": "27.0.0"
           },
           {
             "licenses": [
@@ -3339,14 +3339,14 @@
               "LGPL3"
             ],
             "name": "py312-psycopg",
-            "version": "3.3.6"
+            "version": "3.3.9"
           },
           {
             "licenses": [
               "LGPL3"
             ],
             "name": "py312-psycopg-c",
-            "version": "3.3.6"
+            "version": "3.3.9"
           },
           {
             "licenses": [
@@ -3360,14 +3360,14 @@
               "MIT"
             ],
             "name": "py312-pydantic-core",
-            "version": "2.50.2"
+            "version": "2.50.4"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "py312-pydantic2",
-            "version": "2.14.2"
+            "version": "2.14.3"
           },
           {
             "licenses": [
@@ -3416,7 +3416,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-sqlparse",
-            "version": "0.6.0"
+            "version": "0.6.1"
           },
           {
             "licenses": [
@@ -3451,7 +3451,7 @@
               "MIT"
             ],
             "name": "py312-typing-inspection",
-            "version": "0.4.4_1"
+            "version": "0.4.5"
           },
           {
             "licenses": [
@@ -3465,7 +3465,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-wagtail",
-            "version": "8.0.1"
+            "version": "8.1"
           },
           {
             "licenses": [
@@ -3769,7 +3769,7 @@
           {
             "name": "django-ninja",
             "purl": "",
-            "version": "1.7.3"
+            "version": "1.8.0"
           },
           {
             "name": "django-permissionedforms",
@@ -3824,7 +3824,7 @@
           {
             "name": "gunicorn",
             "purl": "",
-            "version": "26.2.0"
+            "version": "27.0.0"
           },
           {
             "name": "html5lib",
@@ -3884,12 +3884,12 @@
           {
             "name": "psycopg",
             "purl": "",
-            "version": "3.3.6"
+            "version": "3.3.9"
           },
           {
             "name": "psycopg-c",
             "purl": "",
-            "version": "3.3.6"
+            "version": "3.3.9"
           },
           {
             "name": "psycopg-pool",
@@ -3899,12 +3899,12 @@
           {
             "name": "pydantic",
             "purl": "",
-            "version": "2.14.2"
+            "version": "2.14.3"
           },
           {
             "name": "pydantic_core",
             "purl": "",
-            "version": "2.50.2"
+            "version": "2.50.4"
           },
           {
             "name": "pysocks",
@@ -3939,7 +3939,7 @@
           {
             "name": "sqlparse",
             "purl": "",
-            "version": "0.6.0"
+            "version": "0.6.1"
           },
           {
             "name": "swapper",
@@ -3959,7 +3959,7 @@
           {
             "name": "typing-inspection",
             "purl": "",
-            "version": "0.4.4"
+            "version": "0.4.5"
           },
           {
             "name": "typing_extensions",
@@ -3974,7 +3974,7 @@
           {
             "name": "wagtail",
             "purl": "",
-            "version": "8.0.1"
+            "version": "8.1"
           },
           {
             "name": "webencodings",
